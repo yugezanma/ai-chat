@@ -1,0 +1,13 @@
+.git
+.next
+node_modules
+__tests__
+e2e
+coverage
+.env
+.env.local
+*.md
+*.spec.*
+*.test.*
+playwright.config.ts
+vitest.config.ts

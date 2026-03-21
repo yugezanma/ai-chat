@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Bash(npx:*)",
+      "Bash(cp -r /c/Users/207465/workman/ai-chat-tmp/. /c/Users/207465/workman/ai-chat/)",
+      "Bash(rm -rf /c/Users/207465/workman/ai-chat-tmp)",
+      "Bash(npm install:*)",
+      "Bash(grep -r \"MessageListInput\\\\|generate\\(\" /c/Users/207465/workman/ai-chat/node_modules/@mastra/core/dist --include=*.d.ts -l)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(\"/c/Users/207465/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin/gcloud\" auth list 2>&1)"
+    ]
+  }
+}
