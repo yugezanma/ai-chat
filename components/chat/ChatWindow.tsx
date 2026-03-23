@@ -49,7 +49,7 @@ export default function ChatWindow({ conversationId, initialMessages }: Props) {
     } finally {
       setIsLoading(false)
     }
-  }, [conversationId, router])
+  }, [conversationId])
 
   return (
     <div className="flex flex-col h-full">
