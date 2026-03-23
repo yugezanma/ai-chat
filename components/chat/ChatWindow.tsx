@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { useRouter } from 'next/navigation'
 import MessageList from './MessageList'
 import ChatInput from './ChatInput'
 import type { Message, SendMessageResponse } from '@/types'
@@ -12,7 +11,6 @@ type Props = {
 }
 
 export default function ChatWindow({ conversationId, initialMessages }: Props) {
-  const router = useRouter()
   const [messages, setMessages] = useState<Message[]>(initialMessages)
   const [isLoading, setIsLoading] = useState(false)
 
@@ -45,8 +43,6 @@ export default function ChatWindow({ conversationId, initialMessages }: Props) {
         data.userMessage,
         data.assistantMessage,
       ])
-
-      router.refresh()
     } catch (err) {
       console.error(err)
       setMessages((prev) => prev.filter((m) => m.id !== optimisticUser.id))
